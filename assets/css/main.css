@@ -22,7 +22,7 @@
 :root {
   --color-default: #222222;
   --color-primary: #f17422;
-  --color-secondary: #f85a40;
+  --color-secondary: #fbfbfb;
 }
 
 /* Smooth scroll behavior */
@@ -1758,7 +1758,7 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-container {
-  background-color: var(--color-primary);
+  background-color: rgb(255, 255, 255);
   height: 100%;
   padding: 20px;
   border-radius: 10px 0 0 10px;
