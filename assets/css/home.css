@@ -168,9 +168,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-  # Disable aos animation delay on mobile devices
-  --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -242,7 +239,6 @@ section {
   right: 0;
   left: 0;
   height: 70px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo img {
