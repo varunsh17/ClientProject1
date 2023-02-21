@@ -678,24 +678,22 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 
-.hero {
-  /* width: 100%; */
-  /* position: relative; */
-  /* background: var(--color-primary); */
+/*.hero {
   background-image: url(../img/worldmap2.jpg);
-  /* background-size: cover; */
-  /* padding: 60px 0 0 0; */
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 1365px) {
   .hero {
-    background-size: 100% 100%;
-    /* background-size: contain; */
+    background-size: cover;
+    height: 100vh;
     background-repeat: no-repeat;
   }
 }
 
-.hero h2 {
+ .hero h2 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -816,12 +814,12 @@ section {
 .hero .icon-box:hover .title a,
 .hero .icon-box:hover .icon {
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer {
+/* .footer {
   font-size: 14px;
   background-color: var(--color-primary);
   padding: 50px 0;
@@ -931,4 +929,4 @@ section {
 
 .footer .credits a {
   color: #fff;
-}
+} */

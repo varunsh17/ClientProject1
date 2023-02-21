@@ -50,7 +50,6 @@ h6 {
   --------------------------------------------------------------*/
 section {
   padding: 96px 0;
-  /* height: 100vh; */
   overflow: hidden;
 }
 
@@ -94,15 +93,20 @@ section {
   --------------------------------------------------------------*/
 .hero {
   background-image: url(../img/worldmap2.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
-
-@media (min-width: 1365px) {
+@media (max-width: 1024px) {
   .hero {
-    background-size: 100% 100%;
-    /* background-size: contain; */
-    background-repeat: no-repeat;
+    height: 0%;
   }
 }
+/* @media (min-width: 1365px) {
+  .hero {
+    
+  }
+} */
 
 .hero h2 {
   font-size: 48px;
