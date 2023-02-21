@@ -26,9 +26,9 @@
     <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/contact.css" rel="stylesheet">
 
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/contact.css" rel="stylesheet">
 
 </head>
 
@@ -58,159 +58,44 @@
     </header>
     <!-- End Header -->
     <main id="main">
-        <!-- ======= Contact Section ======= -->
-        <!-- <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
 
-                <div class="section-header">
-                    <h2>Contact</h2>
-                    <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt
-                        quis dolorem
-                        dolore earum</p>
-                </div>
+        <div class="container1">
+            <form id="contact" action="" method="post">
+                <h3> Contact Form</h3>
 
-                <div class="row gx-lg-0 gy-4">
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Company Name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Country" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Quantity" type="text" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Spl requirements(branding / plain):" type="text" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Subject" type="text" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" type="text" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
 
-                    <div class="col-lg-4">
-
-                        <div class="info-container d-flex flex-column align-items-center justify-content-center">
-                            <div class="info-item d-flex">
-                                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                                <div>
-                                    <h4>Location:</h4>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
-                                </div>
-                            </div>
-
-                            <div class="info-item d-flex">
-                                <i class="bi bi-envelope flex-shrink-0"></i>
-                                <div>
-                                    <h4>Email:</h4>
-                                    <p>info@example.com</p>
-                                </div>
-                            </div>
-
-                            <div class="info-item d-flex">
-                                <i class="bi bi-phone flex-shrink-0"></i>
-                                <div>
-                                    <h4>Call:</h4>
-                                    <p>+1 5589 55488 55</p>
-                                </div>
-                            </div>
-
-                            <div class="info-item d-flex">
-                                <i class="bi bi-clock flex-shrink-0"></i>
-                                <div>
-                                    <h4>Open Hours:</h4>
-                                    <p>Mon-Sat: 11AM - 23PM</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-8">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
-                            </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="7" placeholder="Message"
-                                    required></textarea>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                        </form>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>End Contact Section -->
-        <div class="background">
-            <div class="container">
-                <div class="screen">
-                    <div class="screen-header">
-                        <div class="screen-header-left">
-                            <div class="screen-header-button close"></div>
-                            <div class="screen-header-button maximize"></div>
-                            <div class="screen-header-button minimize"></div>
-                        </div>
-                        <div class="screen-header-right">
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                        </div>
-                    </div>
-                    <div class="screen-body">
-                        <div class="screen-body-item left">
-                            <div class="app-title">
-                                <span>CONTACT</span>
-                                <span>US</span>
-                            </div>
-                            <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
-                        </div>
-                        <div class="screen-body-item">
-                            <div class="app-form">
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="EMAIL">
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="CONTACT NO">
-                                </div>
-                                <div class="app-form-group message">
-                                    <input class="app-form-control" placeholder="MESSAGE">
-                                </div>
-                                <div class="app-form-group buttons">
-                                    <button class="app-form-button">CANCEL</button>
-                                    <button class="app-form-button">SEND</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="credits">
-                    inspired by
-                    <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
-                        <svg class="dribbble" viewBox="0 0 200 200">
-                            <g stroke="#ffffff" fill="none">
-                                <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
-                                <path
-                                    d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345"
-                                    stroke-width="20"></path>
-                                <path
-                                    d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951"
-                                    stroke-width="20"></path>
-                                <path
-                                    d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103"
-                                    stroke-width="20"></path>
-                            </g>
-                        </svg>
-                        Gururaj
-                    </a>
-                </div>
-            </div>
+            </form>
         </div>
-
-
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer">
 
