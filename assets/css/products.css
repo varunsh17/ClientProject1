@@ -667,17 +667,26 @@ section {
   font-weight: 600;
   display: inline-block;
 }
-.popup_window {
+/* .popup_window {
   display: none;
   position: absolute;
-  /* background-color: aqua; */
   width: 50vw;
   left: 25%;
   top: 5%;
   box-sizing: border-box;
   z-index: 2;
+} */
+.modal-header,
+.modeal-header h4,
+.close {
+  background-color: #5cb85c;
+  color: white !important;
+  text-align: center;
+  font-size: 30px;
 }
-
+.modal-footer {
+  background-color: #f9f9f9;
+}
 .form {
   background: #e6e6e6;
   border-radius: 8px;

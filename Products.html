@@ -4,15 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
     <title>Impact Bootstrap Template - Index</title>
     <meta content="" name="description">
-    <meta content="" name="keywords">
-
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,23 +19,66 @@
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
     <link href="assets/css/products.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Company name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Country">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Phone number">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Quantity">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Spl requirements">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message-text"
+                                placeholder="Write your message.."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL -->
     <header id="header" class="header d-flex align-items-center">
 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
                 <h1>GSV EXIM<span>.</span></h1>
             </a>
-            <nav id="navbar" class="navbar">
+            <nav id="navbar" class="navbar navbar-right">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./About.html">About</a></li>
@@ -55,22 +94,7 @@
         </div>
     </header>
     <!-- End Header -->
-    <div class="popup_window" id="popup_window">
-        <form class="form">
-            <h2>Enquiry form</h2>
-            <p type="Subject:"><input name="itemname"></input></p>
-            <p type="Name:"><input></input></p>
-            <p type="Company name:"><input></input></p>
-            <p type="Country:"><input></input></p>
-            <p type="Email:"><input type="email"></input></p>
-            <p type="Phone:"><input type="tel"></input></p>
-            <p type="Quantity:"><input placeholder="Number" type="number"></input></p>
-            <p type="spl requirements:"><input></input></p>
-            <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
-            <button>Send Message</button>
 
-        </form>
-    </div>
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio1" class="portfolio sections-bg">
         <div class="container" id="container" data-aos="fade-up">
@@ -86,10 +110,6 @@
                 data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
                 <div>
                     <div class="international-first-paragraph mt-5">
-                        <!-- <p style="color: #666666;font-weight: 600;">
-                                Products:
-                            </p> -->
-
                         <div>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -123,8 +143,9 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary" id="Onion"
-                                                    onclick="Handle(event)">ENQUIRY</button>
+                                            <div><button type="button" class="btn btn-info btn-lg"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="Onion">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -160,8 +181,9 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary" id="Okra"
-                                                    onclick="Handle(event)">ENQUIRY</button>
+                                            <div><button type="button" class="btn btn-info btn-lg"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="Okra">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -197,8 +219,9 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary" id="Spirulina Powder"
-                                                    onclick="Handle(event)">ENQUIRY</button>
+                                            <div><button type="button" class="btn btn-info btn-lg"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="Spirulina Powder">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -237,8 +260,9 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary" id="Fresh Lemon"
-                                                    onclick="Handle(event)">ENQUIRY</button>
+                                            <div><button type="button" class="btn btn-info btn-lg"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="Lemon">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -274,8 +298,9 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary" id="Garlic"
-                                                    onclick="Handle(event)">ENQUIRY</button>
+                                            <div><button type="button" class="btn btn-info btn-lg"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    data-bs-whatever="Garlic">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
@@ -339,15 +364,6 @@
             </div>
         </div>
 
-        <div class="container mt-4">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-        </div>
-
     </footer><!-- End Footer -->
     <!-- End Footer -->
 
@@ -360,33 +376,32 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript">
-        let temp = false;
+    <!-- <script type="text/javascript">
         function Handle(e) {
             console.log(e.target.id);
             document.querySelector('input[name="itemname"]').value = e.target.id;
-            document.querySelector('.popup_window').style.display = "block";
-            !temp;
-        }
-        // When the user clicks anywhere outside of the modal, close it
-        var modal3 = document.getElementById("popup_window");
-        console.log("dwe")
-        if (temp) {
-            console.log("FWRFR");
-            window.onclick = function (event) {
-                if (event.target.id != modal3) {
-                    console.log("FWRFR");
-                    document.querySelector('.popup_window').style.display = "none";
-                }
-
-            }
         }
 
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+            });
+        });
+    </script> -->
+    <script>
+        var exampleModal = document.getElementById('exampleModal')
+        exampleModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget
+            var recipient = button.getAttribute('data-bs-whatever')
+            var modalBodyInput = exampleModal.querySelector('.modal-body #subject')
+            modalBodyInput.value = 'Enquiry for ' + recipient
+        })
     </script>
 
 </body>
