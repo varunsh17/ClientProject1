@@ -33,36 +33,36 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="./assets/mailservice/mail.php" method="POST">
+                    <form>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="subject" name="subject">
+                            <input type="text" class="form-control" id="subject">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Name" name="name">
+                            <input type="text" class="form-control" placeholder="Name" id="name">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Company name" name="company_name">
+                            <input type="text" class="form-control" placeholder="Company name" id="company_name">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Email" name="email">
+                            <input type="text" class="form-control" placeholder="Email" id="email">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Country" name="country">
+                            <input type="text" class="form-control" placeholder="Country" id="country">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Phone number" name="phone">
+                            <input type="text" class="form-control" placeholder="Phone number" id="phone">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Quantity" name="quantity">
+                            <input type="text" class="form-control" placeholder="Quantity" id="quantity">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Spl requirements" name="req">
+                            <input type="text" class="form-control" placeholder="Spl requirements" id="req">
                         </div>
                         <div class="mb-3">
                             <textarea class="form-control" id="message-text" placeholder="Write your message.."
-                                name="Message"></textarea>
+                                id="Message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send message</button>
+                        <button type="submit" class="btn btn-primary" onclick="sendmail()">Send message</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -378,23 +378,9 @@
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <!-- <script type="text/javascript">
-        function Handle(e) {
-            console.log(e.target.id);
-            document.querySelector('input[name="itemname"]').value = e.target.id;
-        }
-
-    </script>
-    <script>
-        $(document).ready(function () {
-            $("#myBtn").click(function () {
-                $("#myModal").modal();
-            });
-        });
-    </script> -->
     <script>
         var exampleModal = document.getElementById('exampleModal')
         exampleModal.addEventListener('show.bs.modal', function (event) {
@@ -405,6 +391,34 @@
         })
     </script>
 
+    <script>
+        function sendmail() {
+            // console.log("body sent");
+            // let subject = document.getElementById('subject').value;
+            // let email = document.getElementById('email').value;
+            // let phone = document.getElementById('phone').value;
+            // let country = document.getElementById('country').value;
+            // let name = document.getElementById('name').value;
+            // let company_name = document.getElementById('company_name').value;
+            // let quantity = document.getElementById('quantity').value;
+            // let requirements = document.getElementById('req').value;
+            // let message = document.getElementById('Message').value;
+            // let body = "Hi my name is " + name + " country = " + country + " company name = " + company_name + " Phone = " + phone + " and my requirements are " + requirements + " quantity = " + quantity + " spl req = " + req + " message = " + message;
+
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "varunsharmabro@gmail.com",
+                Password: "293F700323F918F6A802FDE2F1FA7441F1B9",
+                To: 'varunsh170502@gmail.com',
+                From: "varunsharmabro@gmail.com",
+                Subject: "Enquiry regarding ",
+                Body: "wefdwff"
+            }).then(
+                message => alert(message)
+            );
+        }
+
+    </script>
 </body>
 
 
