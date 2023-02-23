@@ -59,10 +59,10 @@
                             <input type="text" class="form-control" placeholder="Spl requirements" id="req">
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" id="message-text" placeholder="Write your message.."
-                                id="Message"></textarea>
+                            <input class="form-control" type="text" placeholder="Write your message.."
+                                id="messag"></input>
                         </div>
-                        <button type="submit" class="btn btn-primary" onclick="sendmail()">Send message</button>
+                        <button type="button" class="btn btn-primary" onclick="sendmail()">Send message</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -393,7 +393,7 @@
 
     <script>
         function sendmail() {
-            // console.log("body sent");
+            console.log("body sent");
             let subject = document.getElementById('subject').value;
             let email = document.getElementById('email').value;
             let phone = document.getElementById('phone').value;
@@ -402,16 +402,17 @@
             let company_name = document.getElementById('company_name').value;
             let quantity = document.getElementById('quantity').value;
             let requirements = document.getElementById('req').value;
-            let message = document.getElementById('Message').value;
-            let body = "Hi my name is " + name + " country = " + country + " company name = " + company_name + " Phone = " + phone + " and my requirements are " + requirements + " quantity = " + quantity + " spl req = " + req + " message = " + message;
+            let message = document.getElementById('messag').value;
+            console.log(message);
+            let body = "Hi my name is " + name + "<br/>" + " country = " + country + "<br/>" + " company name = " + company_name + "<br/>" + " Phone = " + phone + "<br/>" + " and my requirements are " + requirements + "<br/>" + " quantity = " + quantity + "<br/>" + " spl req = " + req + "<br/>" + " message = " + message;
 
             Email.send({
                 Host: "smtp.elasticemail.com",
                 Username: "varunsharmabro@gmail.com",
                 Password: "293F700323F918F6A802FDE2F1FA7441F1B9",
-                To: 'varunsh170502@gmail.com',
+                To: 'nikhilesh@gsvexim',
                 From: "varunsharmabro@gmail.com",
-                Subject: "Enquiry regarding " + subject,
+                Subject: subject,
                 Body: body
             }).then(
                 message => alert(message)
