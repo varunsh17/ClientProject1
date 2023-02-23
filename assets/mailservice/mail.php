@@ -25,5 +25,5 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-// header("Location:thankyou.html");
+header("Location:index.html");
 ?>
