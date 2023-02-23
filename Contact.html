@@ -96,8 +96,10 @@
             <div class="submit">
                 <input type="submit" value="Send Message" id="form_button" />
             </div>
-        </form><!-- // End form -->
-    </div><!-- // End #container -->
+        </form>
+        <!-- // End form -->
+    </div>
+    <!-- // End #container -->
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
 
@@ -171,7 +173,28 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendmail() {
+            console.log("body sent");
+            let subject = document.getElementById('subject').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
 
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "varunsharmabro@gmail.com",
+                Password: "293F700323F918F6A802FDE2F1FA7441F1B9",
+                To: 'nikhilesh@gsvexim',
+                From: "varunsharmabro@gmail.com",
+                Subject: subject,
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+        }
+
+    </script>
 </body>
 
 
