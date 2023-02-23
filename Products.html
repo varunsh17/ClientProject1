@@ -394,16 +394,16 @@
     <script>
         function sendmail() {
             // console.log("body sent");
-            // let subject = document.getElementById('subject').value;
-            // let email = document.getElementById('email').value;
-            // let phone = document.getElementById('phone').value;
-            // let country = document.getElementById('country').value;
-            // let name = document.getElementById('name').value;
-            // let company_name = document.getElementById('company_name').value;
-            // let quantity = document.getElementById('quantity').value;
-            // let requirements = document.getElementById('req').value;
-            // let message = document.getElementById('Message').value;
-            // let body = "Hi my name is " + name + " country = " + country + " company name = " + company_name + " Phone = " + phone + " and my requirements are " + requirements + " quantity = " + quantity + " spl req = " + req + " message = " + message;
+            let subject = document.getElementById('subject').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let country = document.getElementById('country').value;
+            let name = document.getElementById('name').value;
+            let company_name = document.getElementById('company_name').value;
+            let quantity = document.getElementById('quantity').value;
+            let requirements = document.getElementById('req').value;
+            let message = document.getElementById('Message').value;
+            let body = "Hi my name is " + name + " country = " + country + " company name = " + company_name + " Phone = " + phone + " and my requirements are " + requirements + " quantity = " + quantity + " spl req = " + req + " message = " + message;
 
             Email.send({
                 Host: "smtp.elasticemail.com",
@@ -411,8 +411,8 @@
                 Password: "293F700323F918F6A802FDE2F1FA7441F1B9",
                 To: 'varunsh170502@gmail.com',
                 From: "varunsharmabro@gmail.com",
-                Subject: "Enquiry regarding ",
-                Body: "wefdwff"
+                Subject: "Enquiry regarding " + subject,
+                Body: body
             }).then(
                 message => alert(message)
             );
