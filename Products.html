@@ -411,7 +411,16 @@
                 Subject: subject,
                 Body: body
             }).then(
-                message => alert(message)
+                message => alert(message),
+                document.getElementById('subject').value = "",
+                document.getElementById('email').value = "",
+                document.getElementById('phone').value = "",
+                document.getElementById('country').value = "",
+                document.getElementById('name').value = "",
+                document.getElementById('company_name').value = "",
+                document.getElementById('quantity').value = "",
+                document.getElementById('req').value = "",
+                document.getElementById('messag').value = ""
             );
         }
     </script>
