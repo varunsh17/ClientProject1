@@ -42,7 +42,7 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./About.html">About</a></li>
-                    <li><a href="./Services.html">Services</a></li>
+                    <!-- <li><a href="./Services.html">Services</a></li> -->
                     <li><a href="./Products.html">Products</a></li>
                     <li><a href="./Contact.html">Contact</a></li>
                 </ul>
@@ -67,7 +67,7 @@
                 </path>
             </svg>
         </div>
-        <form action="#" method="post" id="contact_form">
+        <form id="contact_form">
             <div class="name">
                 <label for="name"></label>
                 <input type="text" placeholder="My name is" name="name" id="name_input" required>
@@ -78,23 +78,19 @@
             </div>
             <div class="telephone">
                 <label for="name"></label>
-                <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+                <input type="text" placeholder="My number is" name="telephone" id="phone_input" required>
             </div>
             <div class="subject">
                 <label for="subject"></label>
-                <select placeholder="Subject line" name="subject" id="subject_input" required>
-                    <option disabled hidden selected>Subject line</option>
-                    <option>I'd like to ask a question</option>
-                    <option>I'd like to make a proposal</option>
-                </select>
+                <input type="text" placeholder="Subject" name="telephone" id="subject_input" required>
             </div>
             <div class="message">
                 <label for="message"></label>
                 <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5"
-                    required></textarea>
+                    type="reset" required></textarea>
             </div>
             <div class="submit">
-                <input type="submit" value="Send Message" id="form_button" />
+                <input value="Send Message" id="form_button" onclick="sendmail()" />
             </div>
         </form>
         <!-- // End form -->
@@ -177,23 +173,28 @@
     <script>
         function sendmail() {
             console.log("body sent");
-            let subject = document.getElementById('subject').value;
-            let email = document.getElementById('email').value;
-            let phone = document.getElementById('phone').value;
-
+            let sub = document.getElementById('message_input').value;
+            let subject = document.getElementById('subject_input').value;
+            let name = document.getElementById('name_input').value;
+            let email = document.getElementById('email_input').value;
+            let phone = document.getElementById('phone_input').value;
+            console.log(sub);
+            let body = "name = " + name + "<br/>" + "email = " + email + "<br/>" + "phone = " + phone + "<br/>" + "Subject = " + subject + "<br/>" + "message = " + sub;
             Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "varunsharmabro@gmail.com",
-                Password: "293F700323F918F6A802FDE2F1FA7441F1B9",
-                To: 'nikhilesh@gsvexim',
-                From: "varunsharmabro@gmail.com",
+                SecureToken: "de87cc68-b421-4b06-8c4f-310a307e5595",
+                To: 'varunsh170502@gmail.com',
+                From: "gsvexim@gmail.com",
                 Subject: subject,
                 Body: body
             }).then(
-                message => alert(message)
+                message => alert(message),
+                document.getElementById('message_input').value = "",
+                document.getElementById('subject_input').value = "",
+                document.getElementById('name_input').value = "",
+                document.getElementById('email_input').value = "",
+                document.getElementById('phone_input').value = "",
             );
         }
-
     </script>
 </body>
 

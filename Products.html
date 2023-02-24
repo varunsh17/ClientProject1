@@ -62,7 +62,8 @@
                             <input class="form-control" type="text" placeholder="Write your message.."
                                 id="messag"></input>
                         </div>
-                        <button type="button" class="btn btn-primary" onclick="sendmail()">Send message</button>
+                        <button type="button" class="btn btn-primary" onclick="sendmail()" data-bs-dismiss="modal">Send
+                            message</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -83,11 +84,12 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./About.html">About</a></li>
-                    <li><a href="./Services.html">Services</a></li>
+                    <!-- <li><a href="./Services.html">Services</a></li> -->
                     <li><a href="./Products.html">Products</a></li>
                     <li><a href="./Contact.html">Contact</a></li>
                 </ul>
-            </nav><!-- .navbar -->
+            </nav>
+            <!-- .navbar -->
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -390,10 +392,8 @@
             modalBodyInput.value = 'Enquiry for ' + recipient
         })
     </script>
-
     <script>
         function sendmail() {
-            console.log("body sent");
             let subject = document.getElementById('subject').value;
             let email = document.getElementById('email').value;
             let phone = document.getElementById('phone').value;
@@ -403,22 +403,19 @@
             let quantity = document.getElementById('quantity').value;
             let requirements = document.getElementById('req').value;
             let message = document.getElementById('messag').value;
-            console.log(message);
             let body = "Hi my name is " + name + "<br/>" + " country = " + country + "<br/>" + " company name = " + company_name + "<br/>" + " Phone = " + phone + "<br/>" + " and my requirements are " + requirements + "<br/>" + " quantity = " + quantity + "<br/>" + " spl req = " + req + "<br/>" + " message = " + message;
-
             Email.send({
                 Host: "smtp.elasticemail.com",
-                Username: "varunsharmabro@gmail.com",
-                Password: "293F700323F918F6A802FDE2F1FA7441F1B9",
-                To: 'nikhilesh@gsvexim.com',
-                From: "varunsharmabro@gmail.com",
+                Username: "gsvexim@gmail.com",
+                Password: "231A70BC8A4B3D74E4B88D3D0C1203743223",
+                To: 'varunsh170502@gmail.com',
+                From: "gsvexim@gmail.com",
                 Subject: subject,
                 Body: body
             }).then(
                 message => alert(message)
             );
         }
-
     </script>
 </body>
 
