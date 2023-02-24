@@ -403,7 +403,10 @@
             let quantity = document.getElementById('quantity').value;
             let requirements = document.getElementById('req').value;
             let message = document.getElementById('messag').value;
-            let body = "Hi my name is " + name + "<br/>" + " country = " + country + "<br/>" + " company name = " + company_name + "<br/>" + " Phone = " + phone + "<br/>" + " and my requirements are " + requirements + "<br/>" + " quantity = " + quantity + "<br/>" + " spl req = " + req + "<br/>" + " message = " + message;
+            let body = "Hi my name is " + name + "<br/>" + " country = " + country + "<br/>" +
+                " company name = " + company_name + "<br/>" + " Phone = " + phone + "<br/>" +
+                " and my requirements are " + requirements + "<br/>" + " quantity = " + quantity + "<br/>" +
+                " spl req = " + req + "<br/>" + " message = " + message;
             Email.send({
                 SecureToken: "27dad2a7-86d2-43ed-92c2-684bd1377b48",
                 To: 'nikhilesh@gsvexim.com',
@@ -412,6 +415,7 @@
                 Body: body
             }).then(
                 message => alert(message),
+                sendUser(email, subject, quantity, name),
                 document.getElementById('subject').value = "",
                 document.getElementById('email').value = "",
                 document.getElementById('phone').value = "",
@@ -422,6 +426,29 @@
                 document.getElementById('req').value = "",
                 document.getElementById('messag').value = ""
             );
+
+        }
+        function sendUser(email, subject, quantity, name) {
+            const date = new Date();
+
+            let day = date.getDate();
+            let month = date.getMonth() + 1;
+            let year = date.getFullYear();
+            let currentDate = `${day}-${month}-${year}`;
+            let user_body = "Dear " + name + "<br/>" + "Thank you for your interest in our " + subject + " We're excited to partner with you and provide the best quality products and services to meet your needs. " + "<br/>" +
+                "We've received your request for " + quantity + " pieces of our product by " + currentDate + " and are happy to confirm that we'll be fulfilling your order on time. We take pride in our ability to deliver high-quality products and services that meet your expectations and surpass them. " +
+                "<br/>" + "Our team of experts is already on the job and will be in touch with you shortly to discuss further details. We assure you that your order will be handled with utmost care and attention to detail. " + "<br/>" +
+                "At GSV EXIM, we're committed to building strong relationships with our clients and ensuring a smooth and hassle-free experience for them. We believe in delivering the best products and services that help our clients achieve their goals and objectives. " + "<br/>" +
+                "Please don't hesitate to reach out to us at any time for further discussions or queries. We're always available to help!" + "<br/>" +
+                "Thank you for choosing GSV EXIM as your trusted partner. " + "<br/>" +
+                "Warm regards, " + "<br/>" + "GSV EXIM";
+            Email.send({
+                SecureToken: "27dad2a7-86d2-43ed-92c2-684bd1377b48",
+                To: email,
+                From: "gsvexim@gmail.com",
+                Subject: "Thanks for choosing GSV EXIM as your trusted partner",
+                Body: user_body,
+            });
         }
     </script>
 </body>
