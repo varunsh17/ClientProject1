@@ -99,23 +99,7 @@
     <!-- End Header -->
 
     <!-- SEARCH BAR START -->
-    <div class="row mx-0">
-        <div class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
-            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
-                data-filter="all">
-                all</a>
-            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
-                data-filter="fruit">
-                fruit</a>
-            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
-                data-filter="vegetables"> vegetables</a>
-            <!-- <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
-                data-filter="sweets">
-                sweets</a>
-            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
-                data-filter="doughnuts"> doughnuts</a> -->
-        </div>
-    </div>
+
     <!-- SEARCH BAR ENDS -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -127,6 +111,39 @@
                 <p> Our organisation has formed alliances with a network of reliable farmers and growers who are
                     committed to
                     long-term sustainability.</p>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Filter Products
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="all">
+                                all</a></li>
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="fruit">
+                                fruit</a></li>
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="vegetables">
+                                vegetables</a></li>
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="vegetables">
+                                Spices Whole</a></li>
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="vegetables">
+                                Spices Grinded</a></li>
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="vegetables">
+                                Apparel</a></li>
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="vegetables">
+                                Kitchenware</a></li>
+                        <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                data-filter="vegetables">
+                                Footwear</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -344,7 +361,7 @@
     <footer id="footer" class="footer">
 
         <div class="container">
-            <div class="row gy-4">
+            <div class="row gy-4 justify-content-around">
                 <div class="col-lg-5 col-md-12 footer-info">
                     <a href="index.html" class="logo d-flex align-items-center">
                         <span>Impact</span>
@@ -352,7 +369,7 @@
                     <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
                         valies darta
                         donna mare fermentum iaculis eu non diam phasellus.</p>
-                    <div class="social-links d-flex mt-4">
+                    <div class="social-links d-flex">
                         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -364,20 +381,19 @@
                     <h4>Useful Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Products</a></li>
                         <li><a href="#">Terms of service</a></li>
                         <li><a href="#">Privacy policy</a></li>
                     </ul>
                 </div>
 
 
-                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <div class="col-lg-2 col-6 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
                     <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
+                        <!-- A108 Adam Street <br>
+                    New York, NY 535022<br>
+                    United States <br><br> -->
                         <strong>Phone:</strong> +1 5589 55488 55<br>
                         <strong>Email:</strong> info@example.com<br>
                     </p>
@@ -387,7 +403,16 @@
             </div>
         </div>
 
-    </footer><!-- End Footer -->
+        <div class="container mt-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+
+    </footer>
     <!-- End Footer -->
 
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
