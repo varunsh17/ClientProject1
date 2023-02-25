@@ -92,10 +92,7 @@ section {
   # Hero Section
   --------------------------------------------------------------*/
 .hero {
-  background-image: url(../img/worldmap2.jpg);
-  background-size: cover;
   height: 100vh;
-  background-repeat: no-repeat;
 }
 @media (max-width: 1024px) {
   .hero {
