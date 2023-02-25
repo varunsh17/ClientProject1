@@ -98,6 +98,26 @@
     </header>
     <!-- End Header -->
 
+    <!-- SEARCH BAR START -->
+    <div class="row mx-0">
+        <div class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
+                data-filter="all">
+                all</a>
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
+                data-filter="fruit">
+                fruit</a>
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
+                data-filter="vegetables"> vegetables</a>
+            <!-- <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
+                data-filter="sweets">
+                sweets</a>
+            <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btnforfilter"
+                data-filter="doughnuts"> doughnuts</a> -->
+        </div>
+    </div>
+    <!-- SEARCH BAR ENDS -->
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio1" class="portfolio sections-bg">
         <div class="container" id="container" data-aos="fade-up">
@@ -116,7 +136,7 @@
                         <div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="row">
+                                    <div class="row store-item vegetables mb-5" data-item="vegetables">
                                         <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
                                             class="mb-3 col-lg-12">
                                             Onion (Red/Pink):
@@ -146,14 +166,14 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-info btn-lg"
+                                            <div><button type="button" class="btn btn-primary btn-lg"
                                                     data-bs-toggle="modal" data-bs-target="#exampleModal"
                                                     data-bs-whatever="Onion">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="row mt-5">
+                                    <div class="row mb-5 store-item fruit" data-item="fruit">
                                         <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
                                             class="mb-3 col-lg-12">
                                             Okra
@@ -184,14 +204,14 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-info btn-lg"
+                                            <div><button type="button" class="btn btn-primary btn-lg"
                                                     data-bs-toggle="modal" data-bs-target="#exampleModal"
                                                     data-bs-whatever="Okra">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="row mt-5">
+                                    <div class="row mb-5 store-item vegetables" data-item="vegetables">
                                         <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
                                             class="mb-3 col-lg-12">
                                             Spirulina Powder
@@ -222,7 +242,7 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-info btn-lg"
+                                            <div><button type="button" class="btn btn-primary btn-lg"
                                                     data-bs-toggle="modal" data-bs-target="#exampleModal"
                                                     data-bs-whatever="Spirulina Powder">ENQUIRY</button>
                                             </div>
@@ -232,7 +252,7 @@
                                 </div>
 
                                 <div class="col-lg-6">
-                                    <div class="row">
+                                    <div class="row store-item fruit mb-5" data-item="fruit">
                                         <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
                                             class="mb-3 col-lg-12">
                                             Fresh Lemon:
@@ -263,14 +283,14 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-info btn-lg"
+                                            <div><button type="button" class="btn btn-primary btn-lg"
                                                     data-bs-toggle="modal" data-bs-target="#exampleModal"
                                                     data-bs-whatever="Lemon">ENQUIRY</button>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="row mt-5">
+                                    <div class="row mb-5 store-item vegetables" data-item="vegetables">
                                         <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
                                             class="mb-3 col-lg-12">
                                             Garlic:
@@ -301,7 +321,7 @@
                                             <div><span class="products_desig">Gross
                                                     weight:</span>
                                                 India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-info btn-lg"
+                                            <div><button type="button" class="btn btn-primary btn-lg"
                                                     data-bs-toggle="modal" data-bs-target="#exampleModal"
                                                     data-bs-whatever="Garlic">ENQUIRY</button>
                                             </div>
@@ -380,6 +400,8 @@
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
@@ -389,7 +411,7 @@
             var button = event.relatedTarget
             var recipient = button.getAttribute('data-bs-whatever')
             var modalBodyInput = exampleModal.querySelector('.modal-body #subject')
-            modalBodyInput.value = 'Enquiry for ' + recipient
+            modalBodyInput.value = recipient
         })
     </script>
     <script>
@@ -408,9 +430,9 @@
                 " and my requirements are " + requirements + "<br/>" + " quantity = " + quantity + "<br/>" +
                 " spl req = " + req + "<br/>" + " message = " + message;
             Email.send({
-                SecureToken: "27dad2a7-86d2-43ed-92c2-684bd1377b48",
-                To: 'nikhilesh@gsvexim.com',
-                From: "gsvexim@gmail.com",
+                SecureToken: "ba91a5dd-69f8-4f10-b530-ef80338c4b4a",
+                To: 'enquiry@gsvexim.com',
+                From: "nikhilesh@gsvexim.com",
                 Subject: subject,
                 Body: body
             }).then(
@@ -435,22 +457,24 @@
             let month = date.getMonth() + 1;
             let year = date.getFullYear();
             let currentDate = `${day}-${month}-${year}`;
-            let user_body = "Dear " + name + "<br/>" + "Thank you for your interest in our " + subject + " We're excited to partner with you and provide the best quality products and services to meet your needs. " + "<br/>" +
+            let user_body = "Dear " + name + "<br/>" + "Thank you for your interest in " + subject + ". We're excited to partner with you and provide the best quality products and services to meet your needs. " + "<br/>" + "<br/>" +
                 "We've received your request for " + quantity + " pieces of our product by " + currentDate + " and are happy to confirm that we'll be fulfilling your order on time. We take pride in our ability to deliver high-quality products and services that meet your expectations and surpass them. " +
-                "<br/>" + "Our team of experts is already on the job and will be in touch with you shortly to discuss further details. We assure you that your order will be handled with utmost care and attention to detail. " + "<br/>" +
+                "<br/>" + "<br/>" + "Our team of experts is already on the job and will be in touch with you shortly to discuss further details. We assure you that your order will be handled with utmost care and attention to detail. " + "<br/>" + "<br/>" +
                 "At GSV EXIM, we're committed to building strong relationships with our clients and ensuring a smooth and hassle-free experience for them. We believe in delivering the best products and services that help our clients achieve their goals and objectives. " + "<br/>" +
-                "Please don't hesitate to reach out to us at any time for further discussions or queries. We're always available to help!" + "<br/>" +
-                "Thank you for choosing GSV EXIM as your trusted partner. " + "<br/>" +
-                "Warm regards, " + "<br/>" + "GSV EXIM";
+                "Please don't hesitate to reach out to us at any time for further discussions or queries. We're always available to help!" + "<br/>" + "<br/>" +
+                "Thank you for choosing GSV EXIM as your trusted partner. " + "<br/>" + "<br/>" +
+                "Warm regards, " + "<br/>" + "<br/>" + "GSV EXIM";
             Email.send({
-                SecureToken: "27dad2a7-86d2-43ed-92c2-684bd1377b48",
+                SecureToken: "ba91a5dd-69f8-4f10-b530-ef80338c4b4a",
                 To: email,
-                From: "gsvexim@gmail.com",
+                From: "nikhilesh@gsvexim.com",
                 Subject: "Thanks for choosing GSV EXIM as your trusted partner",
                 Body: user_body,
             });
         }
     </script>
+
+
 </body>
 
 
