@@ -839,7 +839,7 @@ button:hover {
 .dropdownformobile {
   display: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 1280px) {
   .dropdownformobile {
     display: block;
     margin-bottom: 10px;
