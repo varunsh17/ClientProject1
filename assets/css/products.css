@@ -238,7 +238,7 @@ section {
 }
 
 .sections-bg {
-  background-color: #f6f6f6;
+  background-color: #ffffff;
 }
 
 .section-header {
@@ -730,13 +730,22 @@ section {
 }
 
 /* PRODUCT CARDS */
-
+.store-item {
+  margin-bottom: 20px;
+}
 .products_desig {
   color: #666666;
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
 }
+.products_desig_botton {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 /* .popup_window {
   display: none;
   position: absolute;
@@ -812,4 +821,30 @@ button:hover {
   max-height: 40vh;
   /* position: absolute; */
   z-index: 10 !important;
+}
+@media (max-width: 991px) {
+  .products_desig_botton {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* CARDS GRID SYSTEM */
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.dropdownformobile {
+  display: none;
+}
+@media (max-width: 991px) {
+  .dropdownformobile {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .dropdown {
+    display: none;
+  }
 }

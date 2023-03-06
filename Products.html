@@ -89,6 +89,41 @@
                     <!-- <li><a href="./Services.html">Services</a></li> -->
                     <li><a href="./Products.html">Products</a></li>
                     <li><a href="./Contact.html">Contact</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Filter Products
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="all">
+                                        All</a></li>
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="fruit">
+                                        Fruits</a></li>
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="vegetables">
+                                        Vegetables</a></li>
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="SpicesWhole">
+                                        Spices Whole</a></li>
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="Spices Grinded">
+                                        Spices Grinded</a></li>
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="Apparel">
+                                        Apparel</a></li>
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="Footwear">
+                                        Footwear</a></li>
+                                <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
+                                        data-filter="Other">
+                                        Others</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <!-- .navbar -->
@@ -114,14 +149,14 @@
                     committed to
                     long-term sustainability.</p>
 
-                <div class="dropdown">
+                <div class="dropdownformobile">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Filter Products
                     </button>
                     <ul class="dropdown-menu">
                         <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
-                                data-filter="all">
+                                data-filter="All">
                                 all</a></li>
                         <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
                                 data-filter="fruit">
@@ -130,7 +165,7 @@
                                 data-filter="vegetables">
                                 vegetables</a></li>
                         <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
-                                data-filter="vegetables">
+                                data-filter="SpicesWhole">
                                 Spices Whole</a></li>
                         <li><a href="#" class="btn  btn-black text-uppercase filter-btn m-2 btnforfilter"
                                 data-filter="vegetables">
@@ -147,211 +182,244 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
-                data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-                <div>
-                    <div class="international-first-paragraph mt-5">
+            <div class="container">
+                <div class="card store-item vegetables my-0" data-item="vegetables">
+                    <div class="card-header border-0 bg-white">
+                        <img src="./assets/img/Onion.jpg" width="250rem" alt="">
+                    </div>
+                    <div class="card-block px-2">
+                        <div><span class=" products_desig mt-4">Name:</span>
+                            Onion
+                        </div>
+                        <div><span class=" products_desig">Variety:</span>
+                            2.5-8.0 cm
+                        </div>
+                        <div><span class="products_desig">Color:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Size:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Unit
+                                price:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Self
+                                life:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Gross
+                                weight:</span>
+                            India,China,Holland,spain,Mexico
+                        </div>
                         <div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="row store-item vegetables mb-5" data-item="vegetables">
-                                        <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
-                                            class="mb-3 col-lg-12">
-                                            Onion (Red/Pink):
-                                        </p>
-                                        <div class="col-lg-3">
-                                            <img src="./assets/img/Onion.jpg" width="90px">
-                                        </div>
-                                        <div class="col-lg-9" style="font-size:14px;color: #666666;">
+                            <span class="products_desig_botton "><button type="button" class="btn btn-primary btn-lg "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="fruit">ENQUIRY</button></span>
 
-                                            <div><span class="products_desig">Variety:</span>
-                                                2.5-8.0 cm
-                                            </div>
-                                            <div><span class="products_desig">Color:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Size:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Unit
-                                                    price:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Self
-                                                    life:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Gross
-                                                    weight:</span>
-                                                India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary btn-lg"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                                    data-bs-whatever="Onion">ENQUIRY</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-5 store-item fruit" data-item="fruit">
-                                        <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
-                                            class="mb-3 col-lg-12">
-                                            Okra
-                                        </p>
-                                        <div class="col-lg-3">
-                                            <img src="./assets/img/Okra.jpg" width="90px">
-
-                                        </div>
-                                        <div class="col-lg-9" style="font-size:14px;color: #666666;">
-
-                                            <div><span class=" products_desig">Variety:</span>
-                                                2.5-8.0 cm
-                                            </div>
-                                            <div><span class="products_desig">Color:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Size:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Unit
-                                                    price:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Self
-                                                    life:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Gross
-                                                    weight:</span>
-                                                India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary btn-lg"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                                    data-bs-whatever="Okra">ENQUIRY</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-5 store-item vegetables" data-item="vegetables">
-                                        <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
-                                            class="mb-3 col-lg-12">
-                                            Spirulina Powder
-                                        </p>
-                                        <div class="col-lg-3">
-                                            <img src="./assets/img/spirulinapowder.webp" width="90px">
-
-                                        </div>
-                                        <div class="col-lg-9" style="font-size:14px;color: #666666;">
-
-                                            <div><span class=" products_desig">Variety:</span>
-                                                2.5-8.0 cm
-                                            </div>
-                                            <div><span class="products_desig">Color:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Size:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Unit
-                                                    price:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Self
-                                                    life:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Gross
-                                                    weight:</span>
-                                                India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary btn-lg"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                                    data-bs-whatever="Spirulina Powder">ENQUIRY</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="row store-item fruit mb-5" data-item="fruit">
-                                        <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
-                                            class="mb-3 col-lg-12">
-                                            Fresh Lemon:
-                                        </p>
-                                        <div class="col-lg-3">
-                                            <img src="./assets/img/fresho-lemon.webp" width="90px">
-
-                                        </div>
-                                        <div class="col-lg-9" style="font-size:14px;color: #666666;">
-
-                                            <div><span class=" products_desig">Variety:</span>
-                                                2.5-8.0 cm
-                                            </div>
-                                            <div><span class="products_desig">Color:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Size:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Unit
-                                                    price:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Self
-                                                    life:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Gross
-                                                    weight:</span>
-                                                India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary btn-lg"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                                    data-bs-whatever="Lemon">ENQUIRY</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-5 store-item vegetables" data-item="vegetables">
-                                        <p style="color: #666666;font-weight: 600;text-transform: capitalize;"
-                                            class="mb-3 col-lg-12">
-                                            Garlic:
-                                        </p>
-                                        <div class="col-lg-3">
-                                            <img src="./assets/img/fresh-ginger.webp" width="90px">
-
-                                        </div>
-                                        <div class="col-lg-9" style="font-size:14px;color: #666666;">
-
-                                            <div><span class=" products_desig">Variety:</span>
-                                                2.5-8.0 cm
-                                            </div>
-                                            <div><span class="products_desig">Color:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Size:</span>
-                                                Net bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Unit
-                                                    price:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Self
-                                                    life:</span> Net
-                                                bags,Jute
-                                                bags,1kg Net,Jumbo bags &amp; Crates</div>
-                                            <div><span class="products_desig">Gross
-                                                    weight:</span>
-                                                India,China,Holland,spain,Mexico</div>
-                                            <div><button type="button" class="btn btn-primary btn-lg"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                                    data-bs-whatever="Garlic">ENQUIRY</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
+
                 </div>
+                <br>
+                <div class="card store-item fruit" data-item="friut">
+                    <div class=" card-header border-0 bg-white">
+                        <img src="./assets/img/fresh-ginger.webp" width="250rem" alt="">
+                    </div>
+                    <div class="card-block px-2">
+                        <div><span class=" products_desig mt-4">Name:</span>
+                            GINGER
+                        </div>
+                        <div><span class=" products_desig">Variety:</span>
+                            2.5-8.0 cm
+                        </div>
+                        <div><span class="products_desig">Color:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Size:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Unit
+                                price:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Self
+                                life:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Gross
+                                weight:</span>
+                            India,China,Holland,spain,Mexico
+                        </div>
+                        <div>
+                            <span class="products_desig_botton "><button type="button" class="btn btn-primary btn-lg "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="fruit">ENQUIRY</button></span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card store-item fruit" data-item="fruit">
+                    <div class="card-header border-0 bg-white">
+                        <img src="./assets/img/fresho-lemon.webp" width="250rem" alt="">
+                    </div>
+                    <div class="card-block px-2">
+                        <div><span class=" products_desig mt-4">Name:</span>
+                            LEMON
+                        </div>
+                        <div><span class=" products_desig">Variety:</span>
+                            2.5-8.0 cm
+                        </div>
+                        <div><span class="products_desig">Color:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Size:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Unit
+                                price:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Self
+                                life:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Gross
+                                weight:</span>
+                            India,China,Holland,spain,Mexico
+                        </div>
+                        <div>
+                            <span class="products_desig_botton "><button type="button" class="btn btn-primary btn-lg "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="fruit">ENQUIRY</button></span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card store-item vegetables" data-item="vegetables">
+                    <div class="card-header border-0 bg-white">
+                        <img src="./assets/img/Okra.jpg" width="250rem" alt="">
+                    </div>
+                    <div class="card-block px-2">
+                        <div><span class=" products_desig mt-4">Name:</span>
+                            OKRA
+                        </div>
+                        <div><span class=" products_desig">Variety:</span>
+                            2.5-8.0 cm
+                        </div>
+                        <div><span class="products_desig">Color:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Size:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Unit
+                                price:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Self
+                                life:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Gross
+                                weight:</span>
+                            India,China,Holland,spain,Mexico
+                        </div>
+                        <div>
+                            <span class="products_desig_botton "><button type="button" class="btn btn-primary btn-lg "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="vegetables">ENQUIRY</button></span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card store-item SpicesWhole" data-item="SpicesWhole">
+                    <div class="card-header border-0 bg-white">
+                        <img src="./assets/img/spirulinapowder.webp" width="250rem" alt="">
+                    </div>
+                    <div class="card-block px-2">
+                        <div><span class=" products_desig mt-4">Name:</span>
+                            SPIRUINA POWDER
+                        </div>
+                        <div><span class=" products_desig">Variety:</span>
+                            2.5-8.0 cm
+                        </div>
+                        <div><span class="products_desig">Color:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Size:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Unit
+                                price:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Self
+                                life:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Gross
+                                weight:</span>
+                            India,China,Holland,spain,Mexico
+                        </div>
+                        <div>
+                            <span class="products_desig_botton "><button type="button" class="btn btn-primary btn-lg "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="SpicesWhole">ENQUIRY</button></span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card store-item vegetables " data-item="vegetables">
+                    <div class="card-header border-0 bg-white">
+                        <img src="./assets/img/GSV_FreshFruit.jpeg" width="250rem" alt="">
+                    </div>
+                    <div class="card-block px-2">
+                        <div><span class=" products_desig mt-4">Name:</span>
+                            FRESH FRUITS
+                        </div>
+                        <div><span class=" products_desig">Variety:</span>
+                            2.5-8.0 cm
+                        </div>
+                        <div><span class="products_desig">Color:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Size:</span>
+                            Net bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Unit
+                                price:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Self
+                                life:</span> Net
+                            bags,Jute
+                            bags,1kg Net,Jumbo bags &amp; Crates</div>
+                        <div><span class="products_desig">Gross
+                                weight:</span>
+                            India,China,Holland,spain,Mexico
+                        </div>
+                        <div>
+                            <span class="products_desig_botton "><button type="button" class="btn btn-primary btn-lg "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-bs-whatever="vegetables">ENQUIRY</button></span>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
         </div>
         </div>
